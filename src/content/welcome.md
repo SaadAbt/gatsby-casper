@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Welcome to Ghost'
+title: 'CyberSpace, modern warfare'
 author: [Ghost]
 tags: ['Getting Started']
 image: img/welcome-to-ghost.jpg
