@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import { css } from '@emotion/react';
+import { css } from '@emotion/core';
 
 import { Footer } from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
@@ -18,13 +18,13 @@ import {
 } from '../styles/shared';
 import { NoImage, PostFull, PostFullHeader, PostFullTitle } from '../templates/post';
 import { colors } from '../styles/colors';
+
 const PageTemplate = css`
   .site-main {
     margin-top: 64px;
     padding-bottom: 4vw;
     background: #fff;
   }
-
   @media (prefers-color-scheme: dark) {
     .site-main {
       /* background: var(--darkmode); */
@@ -36,9 +36,7 @@ const PageTemplate = css`
 const About: React.FC = () => (
   <IndexLayout>
     <Helmet>
-      <title>About</title>
-      <script src="termynal.js"></script>
-      
+      <title>À propos </title>
     </Helmet>
     <Wrapper css={PageTemplate}>
       <header className="site-archive-header no-image" css={[SiteHeader, SiteArchiveHeader]}>
@@ -52,28 +50,13 @@ const About: React.FC = () => (
         <div css={inner}>
           <article className="post page" css={[PostFull, NoImage]}>
             <PostFullHeader className="post-full-header">
-              <PostFullTitle className="post-full-title">About</PostFullTitle>
+              <PostFullTitle className="post-full-title">Atlas Blog & Portefolio</PostFullTitle>
             </PostFullHeader>
 
             <PostFullContent className="post-full-content">
               <div className="post-content">
-                <h5>
-                  Atla's CyberSecurity Personal blog & Portefolio <br /> 
-                </h5>
-                
-                
                 <p>
-                
-                
-              
-                <p>
-                  
-                </p>
-                <p>
-                  
-                </p>
-                <p>
-                  
+                building...
                 </p>
               </div>
             </PostFullContent>
