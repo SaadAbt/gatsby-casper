@@ -18,7 +18,6 @@ import {
 } from '../styles/shared';
 import { NoImage, PostFull, PostFullHeader, PostFullTitle } from '../templates/post';
 import { colors } from '../styles/colors';
-
 const PageTemplate = css`
   .site-main {
     margin-top: 64px;
@@ -38,6 +37,8 @@ const About: React.FC = () => (
   <IndexLayout>
     <Helmet>
       <title>About</title>
+      <script src="termynal.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://thibaud-robin.fr/css/termynal.css">
     </Helmet>
     <Wrapper css={PageTemplate}>
       <header className="site-archive-header no-image" css={[SiteHeader, SiteArchiveHeader]}>
@@ -57,42 +58,49 @@ const About: React.FC = () => (
             <PostFullContent className="post-full-content">
               <div className="post-content">
                 <h5>
-                  A starter template for Gatsby <br /> GitHub: <a href="https://github.com/scttcper/gatsby-casper">scttcper/gatsby-casper</a>
+                  Atla's CyberSecurity Personal blog & Portefolio <br /> 
                 </h5>
+                
+                
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo finibus leo,
-                  non tempus magna vehicula ac. Maecenas mollis ante finibus pharetra imperdiet.
-                  Maecenas in aliquam purus. Nam et massa a nulla fermentum dapibus sit amet in
-                  neque. Ut ipsum ipsum, rhoncus a sodales pellentesque, interdum a elit. Nullam
-                  aliquam tellus nibh, eget laoreet dui aliquet non. Vestibulum malesuada ante at
-                  diam tempus, ac interdum risus scelerisque. Sed ipsum neque, vulputate porta diam
-                  eget, consequat blandit nulla. Integer volutpat velit vitae purus lacinia aliquam.
-                  Integer bibendum ipsum vitae magna pulvinar, nec vehicula dolor vulputate. Nulla
-                  eu massa id orci placerat finibus vel sit amet eros. Vestibulum quis consequat
-                  massa. Sed sagittis sollicitudin massa at commodo. Praesent diam nisi, imperdiet
-                  posuere eleifend nec, blandit ac massa.
+    <Helmet>
+    <div id="termynal">
+        <span data-ty="input" data-ty-prompt="[th1b4ud@th1b4ud-pc ~]$" data-ty-cursor="▋">python3</span>
+        <span data-ty data-ty-delay="700">Python 3.8.1 - [GCC 8.1.1] on linux - Type "help", "copyright", "credits" or "license" for more information</span>
+        <span data-ty="input" data-ty-delay="300"  data-ty-prompt=">>>" data-ty-cursor="▋">import platform</span>
+        <span data-ty="input" data-ty-delay="300"  data-ty-prompt=">>>" data-ty-cursor="▋">os = platform.system()</span>
+        <span data-ty="input" data-ty-prompt=">>>" data-ty-cursor="▋">def whoami():</span>
+        <span data-ty="input" data-ty-prompt="..." data-ty-cursor="▋">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if os == "Windows":</span>
+        <span data-ty="input"  data-ty-delay="700" data-ty-prompt="..." data-ty-cursor="▋">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Cool guy ! Windows it's a usefull tool in internal penetration test :)")</span>
+        <span data-ty="input" data-ty-prompt="..." data-ty-cursor="▋">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif os == "Linux":</span>
+        <span data-ty="input" data-ty-prompt="..." data-ty-cursor="▋">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if "ARCH" in platform.uname()[2]:</span>
+        <span data-ty="input" data-ty-delay="700" data-ty-prompt="..." data-ty-cursor="▋">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Haha the best ! Yeah ArchLinux is the best distrib :D")</span>
+        <span data-ty="input" data-ty-prompt="..." data-ty-cursor="▋">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:</span>
+        <span data-ty="input" data-ty-prompt="..." data-ty-cursor="▋">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Nice guy ! But why don't have a better distrib ? :)")</span>
+        <span data-ty="input" data-ty-delay="1000" data-ty-prompt="..." data-ty-cursor="▋"></span>
+        <span data-ty="input" data-ty-prompt=">>>" data-ty-cursor="▋">whoami()</span>
+        <span data-ty data-ty-delay="100">Haha the best ! Yeah ArchLinux is the best distrib :D</span>
+    </div>
+
+    <script>
+    var termynal = new Termynal('#termynal', { 
+        startDelay: 600,
+        typeDelay: 50,
+        lineDelay: 150
+    });
+    </script>
+    </Helmet>
+                
+                
+                
+                <p>
+                  
                 </p>
                 <p>
-                  Vestibulum semper pretium ipsum nec congue. Ut ac eros nisi. Donec leo sem,
-                  aliquam mollis sapien ultrices, dapibus congue diam. Proin viverra dapibus
-                  blandit. Ut mauris tellus, tristique id felis vel, venenatis vestibulum nunc. Nam
-                  molestie pulvinar nibh, eget egestas augue. Maecenas tellus arcu, mattis ut ipsum
-                  non, sollicitudin convallis nunc. Donec nec neque tristique, aliquet lacus id,
-                  laoreet nunc. Cras dapibus nisi nulla, ullamcorper faucibus neque suscipit ac.
-                  Donec eget orci venenatis justo lobortis volutpat. Proin vel placerat nisl.
-                  Integer arcu nunc, sodales eu fringilla non, aliquam non diam. Cras placerat,
-                  massa et faucibus pretium, ante elit tincidunt tellus, tristique ultricies velit
-                  quam et massa.
+                  
                 </p>
                 <p>
-                  In nunc lacus, dapibus vitae lacus sit amet, efficitur iaculis neque. Suspendisse
-                  ut tellus quis leo vestibulum tincidunt. Aenean nec enim ac dolor lacinia semper.
-                  Ut sed laoreet libero. Nunc elementum sollicitudin accumsan. Nunc eu augue neque.
-                  Proin a tortor nibh. Cras eu nisl ornare sapien feugiat pellentesque. Mauris
-                  dignissim vel quam eu pellentesque. Integer sit amet posuere quam, eu ullamcorper
-                  odio. Nullam a lacus tempus sapien dignissim ullamcorper. In hac habitasse platea
-                  dictumst. Proin quis massa aliquam, feugiat tortor sit amet, tincidunt urna. Donec
-                  posuere pulvinar lectus, ac semper ipsum vulputate quis.
+                  
                 </p>
               </div>
             </PostFullContent>
