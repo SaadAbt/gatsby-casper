@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'How is MA waking up to CyberSecurity'
-author: [Saad]
+author: [Atlas]
 tags: ['Getting Started']
 image: img/m2.png
 date: '2020-01-19T23:46:37.121Z'
