@@ -2,9 +2,9 @@
 layout: post
 title: 'How is MA waking up to CyberSecurity'
 author: [Atlas]
-tags: ['Getting Started']
+tags: ['National']
 image: img/m2.png
-date: '2020-01-19T23:46:37.121Z'
+date: '2019-01-19T23:46:37.121Z'
 draft: false
 excerpt: test
 ---
@@ -26,3 +26,11 @@ Through this new initiative, the sensitive organizations of the country intends 
 cybercrime with more efficiency. 
 
 **DGSN Fighting Cybercrime**:
+![dgsn](img/dgsn.jpg)
+Cybercrime is now in complete expansion, criminals are increasingly attracted to the hook of cyber space and have begun to commit crimes since the latter, 
+hidden behind a feeling of anonymity and impunity cyber criminals are doing great damage, though moral, financial and physical.
+###Cybercrime is all types of ICT-related crimes or crimes:
+- All types of Intrusions and Attacks on information systems
+- Traditional crimes facilitated by the use of ICTs, such as extortion, identity theft, defamation, fraud, cyber-terrorism ...
+
+Conscious of the scale of this new criminal arsenal, the DGSN has set up several Cybernetic Investigation Units to counter cybercrime and please the security of the Kingdom’s cyber space and the security of the Moroccan Internet user.
